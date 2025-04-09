@@ -3,6 +3,10 @@
 *
 */
 const http = require('http');
+
+/* récupérer le MongoClient seulement dans le package mongodb qui 
+ * contient beaucoup d'autres choses 
+*/
 const { MongoClient } = require('mongodb');
 
 //const mongoURL = "mongodb://localhost:27017";
