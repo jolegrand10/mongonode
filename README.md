@@ -5,6 +5,11 @@
 - CRUD requests on a local instance of MongodDB
 
 - Use of the API in HTML pages
+## Pre-requisites
+- mongodb 
+- node.js
+- curl
+- an internet browser
 
 ## API
 
