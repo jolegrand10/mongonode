@@ -48,6 +48,6 @@ Page `index.html` shows the list of contacts.
 Page `add.html` displays a form to enter a new contact
 
 ## Database
-The database is very simple with only one collection for `contacts.
+The database is very simple with only one collection for `contacts`.
 
 Contacts have a `name` and an `email` field, in addition to the unavoidable `_id`.
