@@ -1,0 +1,22 @@
+{
+  "name": "ecmongodb",
+  "version": "1.0.0",
+  "description": "A simple example of the usage of MongoDB with JS on node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "MongoDB",
+    "contacts",
+    "example",
+    "JS",
+    "node"
+  ],
+  "author": "jolegrand10",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.15.0"
+  }
+}

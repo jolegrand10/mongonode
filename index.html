@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <h1>Liste des Contacts</h1>
+    <ul id="contacts-list">
+        <!-- Les contacts seront affichés ici -->
+    </ul>
+
+    <script>
+        // Faire la requête GET à l'API
+        URL = 'http://127.0.0.1:3000/contacts'
+        fetch(URL)
+            .then(response => response.json()) // Transformer la réponse en JSON
+            .then(data => {
+                // Trouver l'élément où afficher les contacts
+                const contactsList = document.getElementById('contacts-list');
+
+                // Parcourir chaque contact et l'ajouter à la liste
+                data.forEach(contact => {
+                    const li = document.createElement('li');
+                    li.textContent = `Nom: ${contact.name}, Email: ${contact.email}`;
+                    contactsList.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+            });
+    </script>
+</body>
+</html>
