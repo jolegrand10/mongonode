@@ -74,4 +74,5 @@ sudo git clone http://github.com/jolegrand10/mongonode mongonode
 cd mongonode
 sudo npm install
 
-echo "Installation completed"
+echo "Installation completed server running on port 3000"
+node server.js &
