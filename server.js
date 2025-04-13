@@ -9,7 +9,7 @@ const http = require('http');
 */
 const { MongoClient } = require('mongodb');
 
-//const mongoURL = "mongodb://localhost:27017";
+const mongoURL = "mongodb://localhost:27017";
 const dbName = "contactsDB";
 let db;
 
@@ -25,7 +25,7 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "OPTIONS") {
         /*
         * 204 No Content. Succès. Pas besoin de quitter la page.
-        * corsHeaders donne les opérations autorisées par le serveur
+        * corsHeaders indique les opérations autorisées par le serveur
         */
         res.writeHead(204, corsHeaders); //envoi des headers
         return res.end();  //envoi des données, ici rien
