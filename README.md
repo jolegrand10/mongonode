@@ -8,7 +8,13 @@
 
 ## How to ?
 
-On an Ubuntu 24.04 machine, collect `install.sh`. Make it executable with:
+On an Ubuntu 24.04 machine, collect `install.sh`. Possibly with:
+
+`curl -O https://raw.githubusercontent.com/jolegrand10/mongonode/main/install.sh`
+
+
+
+Make it executable with:
 
 `$ chmod + x install.sh`
 
