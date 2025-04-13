@@ -5,6 +5,24 @@
 - CRUD requests on a local instance of MongodDB
 
 - Use of the API in HTML pages
+
+## How to ?
+
+On an Ubuntu 24.04 machine, collect `install.sh`. Make it executable with`:
+
+`$ chmod + x install.sh`. 
+
+Then run install.sh with: 
+
+`$ ./install.sh`
+
+Check that the mongonode folder now exists and run
+
+`$ node mongonode/server.js`
+
+Then, try, the curl commands below.
+
+ First add a contact; then, checkout the existing contacts.
 ## Pre-requisites
 - mongodb 
 - node.js
