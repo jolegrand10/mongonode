@@ -67,5 +67,11 @@ sudo systemctl status mongod
 #
 # clone locally the mongonode project from github
 #
-sudo git clone http://github.com/jolegrand10/mongonode ~/project
+sudo git clone http://github.com/jolegrand10/mongonode mongonode
+#
+#
+#
+cd mongonode
+sudo npm install
+
 echo "Installation completed"
