@@ -16,22 +16,22 @@ sudo apt-get update
 # Install curl
 #
 echo "Installing curl"
-apt-get install -y curl
+sudo apt-get install -y curl
 #
 # Install gpg
 #
 echo "Installing curl"
-sudo apt-get install gnupg 
+sudo apt-get install -y gnupg 
 #
 # Install node.js
 #
 echo "Installing Node.js"
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 #
 # Installing npm
 #
 echo "Installing npm"
-sudo apt-get install npm
+sudo apt-get install -y -y npm
 #
 # Install mongodb
 #
@@ -59,6 +59,9 @@ sudo apt-get update
 echo "Installing mongod and mongosh"
 sudo apt-get install -y mongodb-org
 #
+# start mongo
 #
-#
+sudo systemctl start mongod
+sudo systemctl enable mongod
+sudo systemctl status mongod
 echo "Installation completed"
