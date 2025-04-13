@@ -41,7 +41,7 @@ echo "Installing MongoDB"
 #
 echo "Importing public key"
 curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc | \
-   sudo gpg -o /usr/share/keyrings/mongodb-server-8.0.gpg \
+   sudo gpg --yes -o /usr/share/keyrings/mongodb-server-8.0.gpg \
    --dearmor
 #
 # Create list file
@@ -64,4 +64,8 @@ sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 sudo systemctl status mongod
+#
+# clone locally the mongonode project from github
+#
+sudo git clone http://github.com/jolegrand10/mongonode ~/project
 echo "Installation completed"
