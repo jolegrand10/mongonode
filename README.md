@@ -8,9 +8,9 @@
 
 ## How to ?
 
-On an Ubuntu 24.04 machine, collect `install.sh`. Make it executable with`:
+On an Ubuntu 24.04 machine, collect `install.sh`. Make it executable with:
 
-`$ chmod + x install.sh`. 
+`$ chmod + x install.sh`
 
 Then run install.sh with: 
 
