@@ -26,9 +26,7 @@ Check that the mongonode folder now exists and run
 
 `$ node mongonode/server.js`
 
-Then, try, the curl commands below.
-
- First add a contact; then, checkout the existing contacts.
+Then, try the curl commands below to first, add a contact; then, to checkout the existing contacts.
 ## Dependencies and pre-requisites
 - mongodb 
 - node.js
